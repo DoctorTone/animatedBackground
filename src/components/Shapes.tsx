@@ -9,7 +9,7 @@ const Shapes = () => {
         <cylinderGeometry
           args={[SCENE.RADIUS, SCENE.RADIUS, SCENE.HEIGHT, SCENE.SEGMENTS]}
         />
-        <meshStandardMaterial wireframe={true} color={"yellow"} />
+        <meshStandardMaterial wireframe={true} color={"#ffffff"} />
         <Shape />
       </Instances>
     </group>

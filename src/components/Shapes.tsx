@@ -6,8 +6,10 @@ const Shapes = () => {
   return (
     <group>
       <Instances limit={SCENE.numShapes}>
-        <cylinderGeometry />
-        <meshStandardMaterial wireframe={true} color={"hotpink"} />
+        <cylinderGeometry
+          args={[SCENE.RADIUS, SCENE.RADIUS, SCENE.HEIGHT, SCENE.SEGMENTS]}
+        />
+        <meshStandardMaterial wireframe={true} color={"yellow"} />
         <Shape />
       </Instances>
     </group>

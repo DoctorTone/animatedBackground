@@ -4,6 +4,9 @@ const SCENE = {
   numShapes: 15,
   ambientIntensity: 0.5,
   lightPosition: new Vector3(10, 10, 10),
+  RADIUS: 0.75,
+  HEIGHT: 0.75,
+  SEGMENTS: 6,
 };
 
 export { SCENE };

@@ -8,6 +8,8 @@ const SCENE = {
   RADIUS: 0.75,
   HEIGHT: 0.5,
   SEGMENTS: 6,
+  MAX_X: 15,
+  MIN_X: -15,
 };
 
 export { SCENE };

@@ -4,13 +4,19 @@ import Shapes from "./components/Shapes";
 import Text from "./UI/Text";
 import Lights from "./components/Lights";
 
+const INTERACTIVE = false;
+
 function App() {
   return (
     <>
       <Canvas>
         <Lights />
         <Shapes />
-        <OrbitControls />
+        <OrbitControls
+          enablePan={INTERACTIVE}
+          enableRotate={INTERACTIVE}
+          enableZoom={INTERACTIVE}
+        />
       </Canvas>
       <Text />
     </>

@@ -11,7 +11,7 @@ const Shapes = () => {
           args={[SCENE.RADIUS, SCENE.RADIUS, SCENE.HEIGHT, SCENE.SEGMENTS]}
         />
         <meshStandardMaterial wireframe={true} color={"#ffffff"} />
-        {shapeData.map((shape, index) => (
+        {shapeData.map((_, index) => (
           <Shape key={index} />
         ))}
       </Instances>

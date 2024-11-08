@@ -2,14 +2,14 @@ import { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Instance } from "@react-three/drei";
 import { SCENE } from "../state/Config";
+import { Mesh } from "three";
 
 const Shape = () => {
-  const shapeRef = useRef(null);
+  const shapeRef = useRef<Mesh>(null);
   const rotInc = Math.random() * Math.PI;
   let direction = Math.random() - 0.5;
 
-  useFrame((state, delta) => {
-    const time = state.clock.getElapsedTime();
+  useFrame((_, delta) => {
     if (shapeRef.current) {
       shapeRef.current.position.x += delta * direction;
       if (
